@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 from flask import Flask, request
 from huabei import HuaBei
 
@@ -141,4 +144,4 @@ def snow_pack_recommend():
     return template
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
