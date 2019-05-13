@@ -105,3 +105,5 @@ venv.bak/
 
 # ide
 .idea/
+
+./nohup.out
